@@ -1,6 +1,6 @@
 # 👩‍💻 Aleena Kainat – Machine Learning Portfolio
 
-AOA! I’m **Aleena Kainat**, a Computer Science Graduate from **UET (University of Engineering and Technology)**  post-graduate from **PUCIT Lahore** (research in *Image Registration*).  
+AOA! I’m **Aleena Kainat**, a Computer Science Graduate from **UET (University of Engineering and Technology)** and post-graduate from **PUCIT Lahore** (research in *Image Registration*).  
 I specialize in **AI, Machine Learning, Deep Learning, Computer Vision, and Data Visualization**.  
 This portfolio showcases my hands-on projects demonstrating real-world ML and DL applications.
 
