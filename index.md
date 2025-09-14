@@ -11,7 +11,7 @@ This portfolio showcases my hands-on projects demonstrating real-world ML and DL
 ### 📌 1. CIFAR-10 Image Classification
 Convolutional Neural Network trained **CPU-only** on the CIFAR-10 dataset. Shows efficient model building without GPUs.  
 [🔗 View Repository](https://github.com/aleenakainat/cifar10-image-classification)  
-![Sample](https://github.com/aleenakainat/cifar10-image-classification/raw/main/sample_outputs/confusion_matrix.png)
+![Sample](https://github.com/aleenakainat/cifar10-image-classification/raw/main/sample_outputs/confusion_matrix.PNG)
 
 ---
 
