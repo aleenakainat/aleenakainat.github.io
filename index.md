@@ -1,49 +1,327 @@
-# 👩‍💻 Aleena Kainat – Machine Learning Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aleena Kainat — Applied AI & Medical Imaging Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F3F2ED;
+    --paper-raised: #FFFFFE;
+    --ink: #16191B;
+    --muted: #5B6167;
+    --teal: #1F6F64;
+    --signal: #B5432C;
+    --line: #D9D7CD;
+  }
 
-AOA! I’m **Aleena Kainat**, a Computer Science Graduate from **UET (University of Engineering and Technology)** and post-graduate from **PUCIT Lahore** (research in *Image Registration*).  
-I specialize in **AI, Machine Learning, Deep Learning, Computer Vision, and Data Visualization**.  
-This portfolio showcases my hands-on projects demonstrating real-world ML and DL applications.
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #15181A;
+      --paper-raised: #1B1F21;
+      --ink: #ECEBE6;
+      --muted: #9BA1A6;
+      --teal: #56C3B2;
+      --signal: #E07A61;
+      --line: #2B2F31;
+    }
+  }
 
----
+  :root[data-theme="dark"] {
+    --paper: #15181A;
+    --paper-raised: #1B1F21;
+    --ink: #ECEBE6;
+    --muted: #9BA1A6;
+    --teal: #56C3B2;
+    --signal: #E07A61;
+    --line: #2B2F31;
+  }
 
-## 🚀 Featured Projects
+  * { box-sizing: border-box; }
 
-### 📌 1. CIFAR-10 Image Classification
-Convolutional Neural Network trained **CPU-only** on the CIFAR-10 dataset. Shows efficient model building without GPUs.  
-[🔗 View Repository](https://github.com/aleenakainat/cifar10-image-classification)  
-![Sample](https://github.com/aleenakainat/cifar10-image-classification/raw/main/sample_outputs/confusion_matrix.PNG)
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
 
----
+  body {
+    padding: 0 24px;
+  }
 
-### 📌 2. Titanic Data Visualization
-Multiple visualizations (bar chart, scatter, boxplot, heatmap) on Titanic data using **Seaborn** and **Matplotlib**.  
-[🔗 View Repository](https://github.com/aleenakainat/titanic-data-visualization)  
-![Sample](https://github.com/aleenakainat/titanic-data-visualization/raw/main/sample_outputs/heatmap_titanic.png)
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 88px 0 120px;
+  }
 
----
+  @media (max-width: 640px) {
+    .wrap { padding: 56px 0 80px; }
+  }
 
-### 📌 3. Comparative ML Models – Iris Dataset
-Compares **Logistic Regression**, **Random Forest**, and **SVM**, with accuracy comparison and confusion matrices.  
-[🔗 View Repository](https://github.com/aleenakainat/comparative-ml-models-iris)  
-![Sample](https://github.com/aleenakainat/comparative-ml-models-iris/raw/main/sample_outputs/accuracy_comparison.png)
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
 
----
+  a {
+    color: var(--teal);
+    text-decoration-color: var(--line);
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-color: currentColor; }
 
-### 📌 4. Sentiment Analysis (NLP)
-Sentiment classification of movie reviews using **TF-IDF** features and **Logistic Regression**.  
-[🔗 View Repository](https://github.com/aleenakainat/sentiment-analysis-nlp)  
-![Sample](https://github.com/aleenakainat/sentiment-analysis-nlp/raw/main/sample_outputs/confusion_matrix_sentiment.png)
+  .mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
 
----
+  .hero-name {
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    line-height: 1.05;
+  }
 
-## 🛠 Skills
-- 🧠 **Machine Learning / Deep Learning**: TensorFlow, Keras, scikit-learn  
-- 📊 **Data Visualization**: Matplotlib, Seaborn  
-- 🗂 **Tools**: Python, Pandas, NumPy, Google Colab & GitHub  
+  .hero-role {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 46ch;
+  }
 
----
+  .hero-bio {
+    margin-top: 28px;
+    max-width: 58ch;
+    font-size: 1.02rem;
+  }
 
-## 📫 Contact
-📧 **Email:** aleenakainat4@gmail.com  
-💼 **LinkedIn:** [linkedin.com/in/aleenakainat](https://linkedin.com/in/aleena-kainat)  
-🌐 **GitHub:** [github.com/aleenakainat](https://github.com/aleenakainat)
+  .hero-links {
+    margin-top: 22px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+  }
+
+  .section {
+    margin-top: 72px;
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 10px;
+    margin-bottom: 28px;
+  }
+
+  .focus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 640px) {
+    .focus-grid { grid-template-columns: 1fr; }
+  }
+  .focus-item h3 {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+  .focus-item p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .project {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .project:last-child { border-bottom: none; }
+
+  .project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .project-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    padding: 3px 8px;
+    white-space: nowrap;
+  }
+
+  .project-desc {
+    margin-top: 10px;
+    max-width: 60ch;
+    font-size: 0.98rem;
+  }
+
+  .project-metrics {
+    margin-top: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--teal);
+  }
+
+  .project-stack {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .project-link {
+    margin-top: 14px;
+    font-size: 0.92rem;
+    display: inline-block;
+  }
+
+  .note {
+    margin-top: 40px;
+    padding: 18px 20px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+  .note strong { color: var(--ink); font-weight: 500; }
+
+  footer {
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 0.88rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1 class="hero-name">Aleena Kainat</h1>
+  <p class="hero-role">AI/ML researcher working in applied deep learning, computer vision, and medical image analysis.</p>
+  <p class="hero-bio">
+    MPhil in Computer Science (PUCIT, University of the Punjab), with research focused on unsupervised
+    medical image registration. I build and evaluate deep learning models end to end — from architecture
+    and training through to quantitative evaluation and deployment. This page collects a working set of
+    applied projects, each with code, results, and metrics.
+  </p>
+  <div class="hero-links">
+    <a href="mailto:aleenakainat4@gmail.com">aleenakainat4@gmail.com</a>
+    <a href="https://github.com/aleenakainat" target="_blank" rel="noopener">github.com/aleenakainat</a>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Focus areas</div>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <h3>Medical imaging</h3>
+        <p>Segmentation, registration, and classification on radiological data.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Computer vision</h3>
+        <p>Image restoration, similarity search, and representation learning.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Applied deep learning</h3>
+        <p>PyTorch and MONAI, from architecture design to deployment.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Projects</div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Lung Segmentation</div>
+        <div class="project-tag">U-Net · MONAI</div>
+      </div>
+      <p class="project-desc">
+        Segments lung fields from chest X-rays using a 2D U-Net, trained on the Montgomery County
+        chest X-ray set.
+      </p>
+      <div class="project-metrics">Dice 0.9106 · IoU 0.8425</div>
+      <div class="project-stack">PyTorch, MONAI, NumPy</div>
+      <a class="project-link" href="https://github.com/aleenakainat/lung-segmentation-unet" target="_blank" rel="noopener">View repository</a>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Image Super-Resolution</div>
+        <div class="project-tag">ESPCN</div>
+      </div>
+      <p class="project-desc">
+        A sub-pixel convolutional network that upscales images 2x, recovering detail that bicubic
+        interpolation misses. Trained on BSD100.
+      </p>
+      <div class="project-metrics">PSNR / SSIM vs. bicubic baseline</div>
+      <div class="project-stack">PyTorch, scikit-image</div>
+      <a class="project-link" href="https://github.com/aleenakainat/image-super-resolution-espcn" target="_blank" rel="noopener">View repository</a>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Pneumonia Classification</div>
+        <div class="project-tag">ResNet18</div>
+      </div>
+      <p class="project-desc">
+        Classifies chest X-rays as normal or pneumonia using a fine-tuned ResNet18, evaluated with
+        precision, recall, F1, and a confusion matrix rather than accuracy alone.
+      </p>
+      <div class="project-metrics">Precision · Recall · F1 · Confusion matrix</div>
+      <div class="project-stack">PyTorch, MedMNIST, scikit-learn</div>
+      <a class="project-link" href="https://github.com/aleenakainat/pneumonia-classification-resnet18" target="_blank" rel="noopener">View repository</a>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Image Similarity Search</div>
+        <div class="project-tag">CNN embeddings · FAISS</div>
+      </div>
+      <p class="project-desc">
+        Retrieves visually similar images from a gallery using ResNet18 embeddings and a FAISS
+        nearest-neighbor index, evaluated on CIFAR-10.
+      </p>
+      <div class="project-metrics">Precision@5</div>
+      <div class="project-stack">PyTorch, FAISS, NumPy</div>
+      <a class="project-link" href="https://github.com/aleenakainat/image-similarity-search" target="_blank" rel="noopener">View repository</a>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Note:</strong> additional research work, including unsupervised medical image registration
+    (currently under journal review), is available on request.
+  </div>
+
+  <footer>
+    <span>Aleena Kainat</span>
+    <span><a href="mailto:aleenakainat4@gmail.com">Get in touch</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
